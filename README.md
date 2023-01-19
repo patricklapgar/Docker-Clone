@@ -2,7 +2,7 @@
 
 My philosophy regarding technology is if I don't understand it, then I better try building it. 
 
-Regardless of the results, I walk away learning something awesome! :) 
+Regardless of the results, I walk away learning something awesome🤓
 
 This is the repo for a Docker clone I built as a side project. 
 I learned so much about the service, and I wish I was using it more heavily in previous projects. 
