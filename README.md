@@ -1,49 +1,22 @@
-This is a starting point for C solutions to the
-["Build Your Own Docker" Challenge](https://codecrafters.io/challenges/docker).
+# Docker Clone
 
-In this challenge, you'll build a program that can pull an image from
-[Docker Hub](https://hub.docker.com/) and execute commands in it. Along the way,
-we'll learn about [chroot](https://en.wikipedia.org/wiki/Chroot),
-[kernel namespaces](https://en.wikipedia.org/wiki/Linux_namespaces), the
-[docker registry API](https://docs.docker.com/registry/spec/api/) and much more.
+My philosophy regarding technology is if I don't understand it, then I better try building it. 
 
-**Note**: If you're viewing this repo on GitHub, head over to
-[codecrafters.io](https://codecrafters.io) to try the challenge.
+Regardless of the results, I walk away learning something awesome! :) 
 
-# Passing the first stage
+This is the repo for a Docker clone I built as a side project. 
+I learned so much about the service, and I wish I was using it more heavily in previous projects. 
 
-The entry point for your Docker implementation is `app/main.c`. Study and
-uncomment the relevant code, and push your changes to pass the first stage:
+I was inspired to do this from a former classmate of mine, and I conducted further research into it by perusing documentation.
 
-```sh
-git add .
-git commit -m "pass 1st stage" # any msg
-git push origin master
-```
+Took quite a bit of time, but I'm immensely proud of the knowledge I gained from this. 
 
-That's all!
+Here's what the project is:
+ 
+ - A *very* lightweight version of docker
+ - Controlled via the command line. No fancy GUIs here and many key features of Docker are not included
+ - It does utilize some fundamental key features of Docker such as process isolation, 
+   filesystem isolation, handling exit codes, and etc.
 
-# Stage 2 & beyond
-
-Note: This section is for stages 2 and beyond.
-
-You'll use linux-specific syscalls in this challenge. so we'll run your code
-_inside_ a Docker container.
-
-Please ensure you have [Docker installed](https://docs.docker.com/get-docker/)
-locally.
-
-Next, add a [shell alias](https://shapeshed.com/unix-alias/):
-
-```sh
-alias mydocker='docker build -t mydocker . && docker run --cap-add="SYS_ADMIN" mydocker'
-```
-
-(The `--cap-add="SYS_ADMIN"` flag is required to create
-[PID Namespaces](https://man7.org/linux/man-pages/man7/pid_namespaces.7.html))
-
-You can now execute your program like this:
-
-```sh
-mydocker run ubuntu:latest /usr/local/bin/docker-explorer echo hey
-```
+Here's what it's NOT:
+ - Actual Docker
