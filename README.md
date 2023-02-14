@@ -1,22 +1,22 @@
 # Docker Clone
 
-My philosophy regarding technology is if I don't understand it, then I better try building it. 
+## Description
 
-Regardless of the results, I walk away learning something awesome🤓
+A lightweight OS-level containerization tool developed in C with some help from a small Shell script and Dockerfile.
 
-This is the repo for a Docker clone I built as a side project. 
-I learned so much about the service, and will continue to use it in the future. 
+C was employed primarily to serve as gentle practice for me to sharpen my C skills. 
 
-I was inspired to do this from a former classmate of mine, and I conducted further research into it by reading through documentation.
+## What it does:
+ - Process isolation
+ - Filesystem isolation
+ - Handles exit codes
 
-Took quite a bit of time, but I'm immensely proud of the knowledge I gained from this. 
-
-Here's what the project is:
+## What needs to be worked on:
+ - Networking stuff (i.e. container linking, multi-host networking, etc)
+ - GPU Support (giving access to GPU devices like NVIDIA graphics cards)
  
- - A *very* lightweight version of docker
- - Controlled via the command line. No fancy GUIs here and many key features of Docker are not included
- - It does utilize some fundamental key features of Docker such as process isolation, 
-   filesystem isolation, handling exit codes, and etc.
+ ## Challenges
+ 
+The most challenging part of this project so far has to be filesystem isolation.
 
-Here's what it's NOT:
- - Actual Docker
+Although the end result isn't too complicated, I had to ensure a chroot environment was properly set up or else there would be extremely negative effects.
