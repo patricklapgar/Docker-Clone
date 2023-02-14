@@ -7,7 +7,7 @@ Regardless of the results, I walk away learning something awesome🤓
 This is the repo for a Docker clone I built as a side project. 
 I learned so much about the service, and will continue to use it in the future. 
 
-I was inspired to do this from a former classmate of mine, and I conducted further research into it by perusing documentation.
+I was inspired to do this from a former classmate of mine, and I conducted further research into it by reading through documentation.
 
 Took quite a bit of time, but I'm immensely proud of the knowledge I gained from this. 
 
